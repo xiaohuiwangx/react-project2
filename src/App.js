@@ -68,7 +68,17 @@ class App extends React.Component {
       );
     }
     return (
-      <div> </div>
+      <div className="App">
+      <h1>Hi I am react app</h1>
+      <p>this is really working! </p>
+      <button 
+        stype={style} 
+        onClick={this.togglePersonHandler}
+       >
+        Toggle Persons
+      </button> 
+      {persons}
+      </div>
       );
     }
 }
